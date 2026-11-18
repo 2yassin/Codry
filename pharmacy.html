@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codry - Pharmacy</title>
+    <meta name="description"
+        content="Search medicines, send your prescription and get your order picked up or delivered.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/service-pages.css">
+    <link rel="stylesheet" href="css/page-hero.css">
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%9A%95%EF%B8%8F%3C/text%3E%3C/svg%3E">
+
+</head>
+
+<body data-shared>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <i class="fas fa-heartbeat"></i> Codry
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="dropdown" id="departmentsDropdown">
+                        <a href="services.html">
+                            Departments <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="doctors.html"><i class="fas fa-user-md"></i> Doctors</a></li>
+                            <li><a href="medical-tests.html"><i class="fas fa-flask"></i> Lab Tests</a></li>
+                            <li><a href="radiology.html"><i class="fas fa-x-ray"></i> Radiology</a></li>
+                            <li><a href="pharmacy.html"><i class="fas fa-prescription-bottle"></i> Pharmacy</a></li>
+                            <li><a href="room.html"><i class="fas fa-bed"></i> Rooms</a></li>
+                            <li><a href="emergency.html"><i class="fas fa-ambulance"></i> Emergency</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                    <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <section class="ph ph--pharmacy" style="--ph-btn:#0d7a57">
+        <div class="ph-inner">
+            <div class="ph-copy">
+                <div class="ph-badge"><i class="fas fa-prescription-bottle"></i> Codry Pharmacy</div>
+                <h1>Your Health <em>Starts Here</em></h1>
+                <p class="ph-lead">Quality medications, trusted brands, and expert advice — all in one place. Search our
+                    range and find what you need in seconds.</p>
+
+                <form class="ph-search" id="phSearchForm">
+                    <input type="text" id="phSearchInput" placeholder="Search for a medication..."
+                        aria-label="Search medication">
+                    <button type="submit"><i class="fas fa-search"></i> Search</button>
+                </form>
+
+                <div class="ph-chips">
+                    <button type="button" class="ph-chip" data-ph-filter="pain"><i class="fas fa-capsules"></i> Pain
+                        Relief</button>
+                    <button type="button" class="ph-chip" data-ph-filter="antibiotic"><i class="fas fa-pills"></i>
+                        Antibiotics</button>
+                    <button type="button" class="ph-chip" data-ph-filter="vitamin"><i class="fas fa-apple-alt"></i>
+                        Vitamins</button>
+                    <button type="button" class="ph-chip" data-ph-filter="chronic"><i class="fas fa-heartbeat"></i>
+                        Chronic Care</button>
+                </div>
+
+                <div class="ph-stats">
+                    <div class="ph-stat"><b>500+</b><span>Medications</span></div>
+                    <div class="ph-stat"><b>24/7</b><span>Pharmacy Access</span></div>
+                    <div class="ph-stat"><b>98%</b><span>Availability</span></div>
+                </div>
+            </div>
+            <div class="ph-visual">
+                <div class="ph-float ph-float--tl"><i class="fas fa-check-circle"></i>
+                    <div>Trusted Brands<small>Quality guaranteed</small></div>
+                </div>
+                <div class="ph-frame"><img src="img/pharmacy/3.png" alt="Codry Pharmacy medications" loading="lazy">
+                </div>
+                <div class="ph-float ph-float--br"><i class="fas fa-user-nurse"></i>
+                    <div>Expert Advice<small>Ask our pharmacist</small></div>
+                </div>
+            </div>
+        </div>
+        <div class="ph-strip">
+            <div><i class="fas fa-user-nurse"></i>
+                <p><b>Licensed Pharmacists</b><span>Guidance on every medicine</span></p>
+            </div>
+            <div><i class="fas fa-file-prescription"></i>
+                <p><b>Prescriptions</b><span>Filled with care</span></p>
+            </div>
+            <div><i class="fas fa-shield-alt"></i>
+                <p><b>Genuine Medicines</b><span>Trusted brands only</span></p>
+            </div>
+            <div><i class="fas fa-clock"></i>
+                <p><b>Open 24/7</b><span>Always here for you</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-strip" aria-label="Highlights">
+        <div class="container">
+            <div class="info-item"><i class="fas fa-clock"></i>
+                <div><b>Open 24/7</b><span>Day and night, every day</span></div>
+            </div>
+            <div class="info-item"><i class="fas fa-truck-fast"></i>
+                <div><b>Home delivery</b><span>Inside the city, confirmed by phone</span></div>
+            </div>
+            <div class="info-item"><i class="fas fa-user-doctor"></i>
+                <div><b>Pharmacist review</b><span>Every prescription is checked</span></div>
+            </div>
+            <div class="info-item"><i class="fas fa-shield-halved"></i>
+                <div><b>Sealed original brands</b><span>No loose or repackaged packs</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sp-section" id="catalog">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">Medicines</div>
+                <h2>Find your medicine</h2>
+                <p>Search by name (English or Arabic), or filter by what you need it for.</p>
+            </div>
+
+            <div class="tools">
+                <div class="tools-row">
+                    <label class="search-box"><i class="fas fa-search"></i><input type="search" id="catalogSearch"
+                            placeholder="Search: Panadol, بانادول, antibiotic..." aria-label="Search"></label>
+                    <select class="select" id="catalogSort" aria-label="Sort">
+                        <option value="default">Sort: Featured</option>
+                        <option value="name">Name A-Z</option>
+                        <option value="low">Price: low to high</option>
+                        <option value="high">Price: high to low</option>
+                    </select>
+                    <label class="check"><input type="checkbox" id="catalogOnly"> In stock only</label>
+                </div>
+                <div class="tabs" id="catalogTabs" role="group" aria-label="Categories"></div>
+            </div>
+            <div class="result-count" id="catalogCount" aria-live="polite"></div>
+            <div class="catalog-grid" id="catalogGrid"></div>
+        </div>
+    </section>
+
+    <section class="sp-section alt" id="prescription">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">Prescription</div>
+                <h2>Send your prescription</h2>
+                <p>Upload a photo or list the medicines. A pharmacist will call you to confirm price and availability.
+                </p>
+            </div>
+            <div class="split">
+                <form class="form-card" data-demo
+                    data-success="Request received. A pharmacist will call you shortly to confirm price and availability.">
+                    <h3>Order request</h3>
+                    <p>No payment is taken on this page.</p>
+                    <div class="form-row">
+                        <div class="form-group"><label for="rxName">Full name</label><input id="rxName" name="rxName"
+                                type="text" required autocomplete="name"></div>
+                        <div class="form-group"><label for="rxPhone">Phone</label><input id="rxPhone" name="rxPhone"
+                                type="tel" required autocomplete="tel"></div>
+                    </div>
+                    <div class="form-group"><label for="rxMeds">Medicines you need</label><textarea id="rxMeds"
+                            name="rxMeds"
+                            placeholder="One per line. Tapping Order Now on a medicine adds it here."></textarea></div>
+                    <div class="form-group"><label for="rxFile">Prescription photo (optional)</label><input id="rxFile"
+                            name="rxFile" type="file" accept="image/*,.pdf"></div>
+                    <div class="form-group"><label for="rxMode">How do you want it?</label><select id="rxMode"
+                            name="rxMode">
+                            <option value="pickup">Pick up from the pharmacy</option>
+                            <option value="delivery">Home delivery</option>
+                        </select></div><button class="btn-submit" type="submit">Send request</button>
+                    <div class="form-result" role="status" hidden></div>
+                </form>
+                <aside class="side-card">
+                    <h3>Before you send</h3>
+                    <div class="side-row"><span>Antibiotics</span><span>Prescription needed</span></div>
+                    <div class="side-row"><span>Chronic care</span><span>Prescription needed</span></div>
+                    <div class="side-row"><span>Delivery</span><span>Confirmed by phone</span></div>
+                    <div class="side-row"><span>Payment</span><span>On pickup or delivery</span></div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="sp-section" id="how">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">How it works</div>
+                <h2>From request to your door</h2>
+                <p></p>
+            </div>
+            <ol class="steps">
+                <li>
+                    <h3>Choose or upload</h3>
+                    <p>Add medicines from the catalog or send a photo of your prescription.</p>
+                </li>
+                <li>
+                    <h3>Pharmacist checks</h3>
+                    <p>We check the dose, interactions and stock.</p>
+                </li>
+                <li>
+                    <h3>We confirm by phone</h3>
+                    <p>You get the final price before anything is prepared.</p>
+                </li>
+                <li>
+                    <h3>Pick up or delivery</h3>
+                    <p>Collect at the pharmacy or receive it at home.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="sp-section alt" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">FAQ</div>
+                <h2>Common questions</h2>
+                <p></p>
+            </div>
+            <div class="faq">
+                <details>
+                    <summary>Which medicines need a prescription?</summary>
+                    <p>Antibiotics, chronic-care medicines and inhalers are dispensed only with a valid prescription.
+                        Pain relief, vitamins, allergy and digestive products are available without one.</p>
+                </details>
+                <details>
+                    <summary>What if a medicine is out of stock?</summary>
+                    <p>Choose Pre-Order. We call you as soon as it arrives, and the pharmacist can suggest an equivalent
+                        if your doctor agrees.</p>
+                </details>
+                <details>
+                    <summary>Can the pharmacist advise me?</summary>
+                    <p>Yes. Ask about doses, side effects and how a medicine mixes with others you take.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-box">
+            <h2>Need medication advice?</h2>
+            <p>Our pharmacists can help you choose the right product for your needs.</p><a href="tel:+1234567890"
+                class="btn-white"><i class="fas fa-phone"></i> Call the pharmacist</a>
+        </div>
+    </section>
+
+    <script src="js/layout.js" data-part="footer"></script>
+    <script src="js/data/pharmacy.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/forms.js"></script>
+    <script>
+        Catalog({
+            key: 'pharmacy', onAction: function (item) {
+                if (item.status === 'out-of-stock') { alert('We will let you know when ' + item.name + ' is back in stock.'); return; }
+                var box = document.getElementById('rxMeds');
+                box.value += (box.value && !box.value.endsWith('\n') ? '\n' : '') + item.name;
+                document.getElementById('prescription').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+</body>
+
+</html>

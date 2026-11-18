@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codry - Emergency & Ambulance</title>
+    <meta name="description"
+        content="24/7 emergency care and ambulance. Call first, then use the form for non-immediate requests.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/service-pages.css">
+    <link rel="stylesheet" href="css/page-hero.css">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%9A%95%EF%B8%8F%3C/text%3E%3C/svg%3E">
+
+    <style>
+        /* ===== 2. EMERGENCY NUMBER ===== */
+        .emergency-number-section {
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            background: var(--emergency-red);
+            color: white;
+            text-align: center;
+        }
+
+        .emergency-number-section .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .emergency-number-section .label {
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .emergency-number-section .number {
+            font-size: 4.5rem;
+            font-weight: 900;
+            letter-spacing: 3px;
+            margin-bottom: 0.5rem;
+        }
+
+        .emergency-number-section .number a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .emergency-number-section .number a:hover {
+            text-decoration: underline;
+        }
+
+        .emergency-number-section .sub-text {
+            font-size: 1.1rem;
+            opacity: 0.85;
+        }
+
+        .emergency-number-section .emergency-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 0.3rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .emergency-number-section .emergency-badge i {
+            margin-right: 0.4rem;
+        }
+
+        @media (max-width: 650px) {
+            .emergency-number-section .number {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body data-shared>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <i class="fas fa-heartbeat"></i> Codry
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="dropdown" id="departmentsDropdown">
+                        <a href="services.html">
+                            Departments <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="doctors.html"><i class="fas fa-user-md"></i> Doctors</a></li>
+                            <li><a href="medical-tests.html"><i class="fas fa-flask"></i> Lab Tests</a></li>
+                            <li><a href="radiology.html"><i class="fas fa-x-ray"></i> Radiology</a></li>
+                            <li><a href="pharmacy.html"><i class="fas fa-prescription-bottle"></i> Pharmacy</a></li>
+                            <li><a href="room.html"><i class="fas fa-bed"></i> Rooms</a></li>
+                            <li><a href="emergency.html"><i class="fas fa-ambulance"></i> Emergency</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                    <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="ph ph--emergency" style="--ph-btn:#c21f35; height: 110vh;">
+        <div class="ph-inner">
+            <div class="ph-copy">
+                <div class="ph-badge"><i class="fas fa-ambulance"></i> Emergency Services</div><span
+                    class="ph-live">Ambulances available now</span>
+                <h1>Emergency Help, <em>Minutes Away</em></h1>
+                <p class="ph-lead">Fast, reliable emergency care when you need it most. Our ambulance team is available
+                    24/7 to respond to your emergency.</p>
+
+                <a class="ph-sos" href="tel:+963982057497" aria-label="Call emergency now">
+                    <i class="fas fa-phone-alt"></i>
+                    <span><small>Call Now — 24/7</small><strong>123-456-7890</strong></span>
+                </a>
+
+                <div class="ph-actions">
+                    <a href="#emergency-info" class="ph-btn ph-btn--ghost"><i class="fas fa-info-circle"></i> What to
+                        Expect</a>
+                    <a href="contact.html" class="ph-btn ph-btn--ghost"><i class="fas fa-map-marker-alt"></i> Find
+                        Us</a>
+                </div>
+
+                <div class="ph-stats">
+                    <div class="ph-stat"><b>5min</b><span>Average Response</span></div>
+                    <div class="ph-stat"><b>24/7</b><span>Emergency Service</span></div>
+                    <div class="ph-stat"><b>98%</b><span>Success Rate</span></div>
+                </div>
+            </div>
+            <div class="ph-visual">
+                <div class="ph-float ph-float--tl"><i class="fas fa-clock"></i>
+                    <div>24/7 Available<small>Every day of the year</small></div>
+                </div>
+                <div style="position:relative">
+                    <div class="ph-frame"><img src="img/rooms/3.png" alt="Codry emergency care" loading="lazy"></div>
+                    <div class="ph-float ph-float--br"><i class="fas fa-check-circle"></i>
+                        <div>Certified Team<small>Trained paramedics</small></div>
+                    </div>
+                </div>
+                <div class="ph-steps">
+                    <h4>While you wait for help</h4>
+                    <ol>
+                        <li>Call us and tell us what happened</li>
+                        <li>Share your exact location</li>
+                        <li>Stay calm — our team is on the way</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 2. EMERGENCY NUMBER ===== -->
+    <section id="emergency-info" class="emergency-number-section">
+        <div class="container">
+            <div class="label"><i class="fas fa-phone"></i> Call Now for Emergency</div>
+            <div class="number animate-pulse-red">
+                <a href="tel:+963982057497">123-456-7890</a>
+            </div>
+            <div class="sub-text">Available 24 hours a day, 7 days a week</div>
+            <div class="emergency-badge"><i class="fas fa-shield-alt"></i> Free for medical emergencies</div>
+        </div>
+    </section>
+
+    <section class="sp-section" id="when">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">When to call</div>
+                <h2>Call immediately if you see</h2>
+                <p>Do not wait to see if it gets better.</p>
+            </div>
+            <div class="redflags">
+                <div class="redflag">
+                    <h3><i class="fas fa-heart-pulse"></i> Heart and breathing</h3>
+                    <ul>
+                        <li>Chest pain or pressure</li>
+                        <li>Severe trouble breathing</li>
+                        <li>Blue or grey lips</li>
+                    </ul>
+                </div>
+                <div class="redflag">
+                    <h3><i class="fas fa-brain"></i> Stroke signs</h3>
+                    <ul>
+                        <li>Face drooping on one side</li>
+                        <li>Weak arm or leg</li>
+                        <li>Slurred speech, sudden confusion</li>
+                    </ul>
+                </div>
+                <div class="redflag">
+                    <h3><i class="fas fa-droplet"></i> Bleeding and injury</h3>
+                    <ul>
+                        <li>Bleeding that will not stop after 10 minutes of pressure</li>
+                        <li>Head injury with vomiting or confusion</li>
+                        <li>Suspected neck or back injury</li>
+                    </ul>
+                </div>
+                <div class="redflag">
+                    <h3><i class="fas fa-triangle-exclamation"></i> Other emergencies</h3>
+                    <ul>
+                        <li>Unconscious or fitting for over 5 minutes</li>
+                        <li>Severe allergic reaction with swelling</li>
+                        <li>Poisoning or overdose</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sp-section alt" id="request">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">Request</div>
+                <h2>Request an ambulance</h2>
+                <p>For urgent but not immediately life-threatening situations. We call you back to confirm.</p>
+            </div>
+            <div class="split">
+                <form class="form-card" data-demo
+                    data-success="Request received. A dispatcher will call you back now. If the situation gets worse, call 123-456-7890.">
+                    <h3>Ambulance request</h3>
+                    <p>If the patient is in immediate danger, call instead.</p>
+                    <div class="form-row">
+                        <div class="form-group"><label for="amName">Full name</label><input id="amName" name="amName"
+                                type="text" required autocomplete="name"></div>
+                        <div class="form-group"><label for="amPhone">Phone</label><input id="amPhone" name="amPhone"
+                                type="tel" required autocomplete="tel"></div>
+                    </div>
+                    <div class="form-group"><label for="amLoc">Location or address</label><input id="amLoc" name="amLoc"
+                            type="text" required></div><button type="button" class="locate" id="locateBtn"><i
+                            class="fas fa-location-crosshairs"></i> Use my current location</button>
+                    <div style="height:1rem"></div>
+                    <div class="form-group"><label for="amCond">Patient condition</label><select id="amCond"
+                            name="amCond" required>
+                            <option value="">Select condition</option>
+                            <option value="critical">Critical, life-threatening</option>
+                            <option value="urgent">Urgent, serious</option>
+                            <option value="moderate">Moderate, stable</option>
+                            <option value="mild">Mild, minor</option>
+                        </select></div>
+                    <div class="form-group"><label for="amInfo">What happened?</label><textarea id="amInfo"
+                            name="amInfo"
+                            placeholder="Symptoms, age of the patient, anything we should know"></textarea></div><button
+                        class="btn-submit danger" type="submit"><i class="fas fa-ambulance"></i> Request
+                        ambulance</button>
+                    <div class="form-result" role="status" hidden></div>
+                </form>
+                <aside class="side-card">
+                    <h3>What happens next</h3>
+                    <div class="side-row"><span>1. Call back</span><span>A dispatcher phones you</span></div>
+                    <div class="side-row"><span>2. Dispatch</span><span>Nearest unit is sent</span></div>
+                    <div class="side-row"><span>Response time</span><span>5-7 minutes in the city</span></div>
+                    <div class="side-row"><span>Crew</span><span>Paramedics on board</span></div>
+                    <div class="side-row"><span>Equipment</span><span>Full ICU support</span></div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="sp-section" id="firstaid">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">First aid</div>
+                <h2>While you wait for help</h2>
+                <p>Simple steps that can help before the ambulance arrives.</p>
+            </div>
+            <div class="firstaid-grid">
+                <div class="firstaid">
+                    <h3><i class="fas fa-heart-pulse"></i> Not breathing (adult)</h3>
+                    <ol>
+                        <li>Call for help and shout for a defibrillator</li>
+                        <li>Push hard and fast in the centre of the chest</li>
+                        <li>About 100-120 pushes a minute, until help arrives</li>
+                    </ol>
+                </div>
+                <div class="firstaid">
+                    <h3><i class="fas fa-droplet"></i> Heavy bleeding</h3>
+                    <ol>
+                        <li>Press firmly with a clean cloth</li>
+                        <li>Do not remove it. Add more cloth on top</li>
+                        <li>Keep the injured part raised if you can</li>
+                    </ol>
+                </div>
+                <div class="firstaid">
+                    <h3><i class="fas fa-fire"></i> Burns</h3>
+                    <ol>
+                        <li>Cool under running water for 20 minutes</li>
+                        <li>Do not use ice, butter or toothpaste</li>
+                        <li>Cover loosely with a clean cloth</li>
+                    </ol>
+                </div>
+                <div class="firstaid">
+                    <h3><i class="fas fa-face-grimace"></i> Choking (adult)</h3>
+                    <ol>
+                        <li>Encourage them to cough</li>
+                        <li>Give up to 5 firm back blows</li>
+                        <li>Then 5 abdominal thrusts, and repeat</li>
+                    </ol>
+                </div>
+            </div>
+            <p class="note"><i class="fas fa-circle-info"></i> A first-aid course is the best preparation. These steps
+                do not replace one.</p>
+        </div>
+    </section>
+
+    <section class="sp-section alt" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">What we handle</div>
+                <h2>Our emergency unit</h2>
+                <p></p>
+            </div>
+            <div class="locations">
+                <div class="location"><i class="fas fa-hospital"></i>
+                    <div>
+                        <h3>24-hour emergency room</h3>
+                        <p>Doctors and nurses on duty at all hours.</p>
+                    </div>
+                </div>
+                <div class="location"><i class="fas fa-truck-medical"></i>
+                    <div>
+                        <h3>ICU ambulance</h3>
+                        <p>Transport with monitoring and oxygen.</p>
+                    </div>
+                </div>
+                <div class="location"><i class="fas fa-bone"></i>
+                    <div>
+                        <h3>Trauma and fractures</h3>
+                        <p>Accidents, falls and sports injuries.</p>
+                    </div>
+                </div>
+                <div class="location"><i class="fas fa-child"></i>
+                    <div>
+                        <h3>Children's emergencies</h3>
+                        <p>Fever, breathing trouble, injuries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sp-section" id="locations">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">Locations</div>
+                <h2>Find us</h2>
+                <p></p>
+            </div>
+            <div class="locations">
+                <div class="location"><i class="fas fa-hospital"></i>
+                    <div>
+                        <h3>Main Emergency Center</h3>
+                        <p>123 Main Street, City Center</p>
+                    </div>
+                </div>
+                <div class="location"><i class="fas fa-building"></i>
+                    <div>
+                        <h3>North Branch</h3>
+                        <p>456 North Avenue, City. Open 24/7</p>
+                    </div>
+                </div>
+                <div class="location"><i class="fas fa-ambulance"></i>
+                    <div>
+                        <h3>Ambulance Base</h3>
+                        <p>789 Emergency Road, City</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sp-section alt" id="ready">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">Be ready</div>
+                <h2>Keep these ready for the crew</h2>
+                <p></p>
+            </div>
+            <ul class="checklist">
+                <li><i class="fas fa-check"></i> ID and insurance card</li>
+                <li><i class="fas fa-check"></i> List of medicines the patient takes</li>
+                <li><i class="fas fa-check"></i> Known allergies and conditions</li>
+                <li><i class="fas fa-check"></i> Phone charged and on loud</li>
+                <li><i class="fas fa-check"></i> Gate open and entrance lit</li>
+                <li><i class="fas fa-check"></i> Someone to meet the crew outside</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-box">
+            <h2>Need immediate help?</h2>
+            <p>Call our emergency line now. Our team is ready 24/7.</p><a href="tel:1234567890" class="btn-white"><i
+                    class="fas fa-phone"></i> Call emergency</a>
+        </div>
+    </section>
+
+    <script src="js/layout.js" data-part="footer"></script>
+    <script src="js/forms.js"></script>
+    <script>
+        document.getElementById('locateBtn').addEventListener('click', function () {
+            var box = document.getElementById('amLoc');
+            if (!navigator.geolocation) { box.focus(); return; }
+            this.textContent = 'Finding you...';
+            var btn = this;
+            navigator.geolocation.getCurrentPosition(function (p) {
+                box.value = 'GPS: ' + p.coords.latitude.toFixed(5) + ', ' + p.coords.longitude.toFixed(5);
+                btn.innerHTML = '<i class="fas fa-location-crosshairs"></i> Location added';
+            }, function () {
+                btn.innerHTML = '<i class="fas fa-location-crosshairs"></i> Could not get location. Type the address.';
+                box.focus();
+            });
+        });
+    </script>
+</body>
+
+</html>

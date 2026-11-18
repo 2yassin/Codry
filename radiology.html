@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codry - Radiology</title>
+    <meta name="description" content="X-ray, CT, MRI and ultrasound with clear preparation instructions and online reports.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/service-pages.css">
+    <link rel="stylesheet" href="css/page-hero.css">
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%9A%95%EF%B8%8F%3C/text%3E%3C/svg%3E">
+
+</head>
+<body data-shared>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <i class="fas fa-heartbeat"></i> Codry
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="dropdown" id="departmentsDropdown">
+                        <a href="services.html">
+                            Departments <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="doctors.html"><i class="fas fa-user-md"></i> Doctors</a></li>
+                            <li><a href="medical-tests.html"><i class="fas fa-flask"></i> Lab Tests</a></li>
+                            <li><a href="radiology.html"><i class="fas fa-x-ray"></i> Radiology</a></li>
+                            <li><a href="pharmacy.html"><i class="fas fa-prescription-bottle"></i> Pharmacy</a></li>
+                            <li><a href="room.html"><i class="fas fa-bed"></i> Rooms</a></li>
+                            <li><a href="emergency.html"><i class="fas fa-ambulance"></i> Emergency</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                    <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="ph ph--radiology" style="--ph-btn:#2358c4">
+        <div class="ph-inner">
+            <div class="ph-copy">
+                <div class="ph-badge"><i class="fas fa-x-ray"></i> Radiology</div>
+                <h1>Advanced <em>Imaging Services</em></h1>
+                <p class="ph-lead">State-of-the-art imaging technology for accurate diagnosis and treatment planning — from a quick X-ray to a detailed MRI.</p>
+
+                <div class="ph-chips">
+                    <button type="button" class="ph-chip" data-ph-filter="xray"><i class="fas fa-x-ray"></i> X-Ray</button>
+                    <button type="button" class="ph-chip" data-ph-filter="ct"><i class="fas fa-circle-notch"></i> CT Scan</button>
+                    <button type="button" class="ph-chip" data-ph-filter="mri"><i class="fas fa-magnet"></i> MRI</button>
+                    <button type="button" class="ph-chip" data-ph-filter="ultrasound"><i class="fas fa-wave-square"></i> Ultrasound</button>
+                </div>
+
+                <div class="ph-flow">
+                    <span><i class="fas fa-calendar-check"></i> Book</span><i class="fas fa-chevron-right sep"></i>
+                    <span><i class="fas fa-x-ray"></i> Scan</span><i class="fas fa-chevron-right sep"></i>
+                    <span><i class="fas fa-file-medical"></i> Results in 24h</span>
+                </div>
+
+                <div class="ph-actions">
+                    <a href="booking.html" class="ph-btn ph-btn--solid"><i class="fas fa-calendar-check"></i> Book a Scan</a>
+                    <a href="#radiology-services" class="ph-btn ph-btn--ghost">Browse Imaging</a>
+                </div>
+
+                <div class="ph-stats">
+                    <div class="ph-stat"><b>10+</b><span>Imaging Types</span></div>
+                    <div class="ph-stat"><b>24h</b><span>Results Time</span></div>
+                    <div class="ph-stat"><b>99%</b><span>Accuracy</span></div>
+                </div>
+            </div>
+            <div class="ph-visual">
+                <div class="ph-float ph-float--tl"><i class="fas fa-bullseye"></i><div>99% Accuracy<small>Precise diagnosis</small></div></div>
+                <div class="ph-frame ph-scan"><img src="img/radiology/r1.png" alt="Codry radiology imaging" loading="lazy"></div>
+                <div class="ph-float ph-float--br"><i class="fas fa-clock"></i><div>Fast Results<small>Within 24 hours</small></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-strip" aria-label="Highlights"><div class="container"><div class="info-item"><i class="fas fa-calendar-check"></i><div><b>Book online</b><span>Choose the scan and the time</span></div></div><div class="info-item"><i class="fas fa-shield-halved"></i><div><b>Safety screening</b><span>Checked before every scan</span></div></div><div class="info-item"><i class="fas fa-file-lines"></i><div><b>Report online</b><span>Shared with you and your doctor</span></div></div><div class="info-item"><i class="fas fa-user-doctor"></i><div><b>Specialist radiologists</b><span>Every study is reported by a radiologist</span></div></div></div></section>
+
+    <section class="sp-section" id="imaging">
+        <div class="container">
+            <div class="section-header"><div class="sub">Scans</div><h2>Available imaging services</h2><p>Filter by scan type, or search by body area.</p></div>
+
+            <div class="tools">
+                <div class="tools-row">
+                    <label class="search-box"><i class="fas fa-search"></i><input type="search" id="catalogSearch" placeholder="Search: chest, knee, brain, بطن..." aria-label="Search"></label>
+                    <select class="select" id="catalogSort" aria-label="Sort"><option value="default">Sort: Featured</option><option value="name">Name A-Z</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select>
+                    <label class="check"><input type="checkbox" id="catalogOnly"> Available now only</label>
+                </div>
+                <div class="tabs" id="catalogTabs" role="group" aria-label="Categories"></div>
+            </div>
+            <div class="result-count" id="catalogCount" aria-live="polite"></div>
+            <div class="catalog-grid" id="catalogGrid"></div>
+        </div>
+    </section>
+
+    <section class="sp-section alt" id="which">
+        <div class="container">
+            <div class="section-header"><div class="sub">Choose a scan</div><h2>Which scan is right?</h2><p>Your doctor decides, but this is what each one does best.</p></div>
+<div class="prep-grid"><div class="prep-card"><h3><i class="fas fa-x-ray"></i> X-Ray</h3><ul><li>Best for bones and chest</li><li>About 10-15 minutes</li><li>Low radiation dose</li></ul></div><div class="prep-card"><h3><i class="fas fa-circle-notch"></i> CT scan</h3><ul><li>Best for trauma, stones, bleeding</li><li>About 15-30 minutes</li><li>Uses radiation, sometimes contrast dye</li></ul></div><div class="prep-card"><h3><i class="fas fa-magnet"></i> MRI</h3><ul><li>Best for brain, spine, joints, soft tissue</li><li>About 30-45 minutes</li><li>No radiation, strong magnet</li></ul></div><div class="prep-card"><h3><i class="fas fa-wave-square"></i> Ultrasound</h3><ul><li>Best for pregnancy, abdomen, thyroid</li><li>About 20 minutes</li><li>No radiation, uses sound waves</li></ul></div></div>
+        </div>
+    </section>
+
+    <section class="sp-section" id="prepare">
+        <div class="container">
+            <div class="section-header"><div class="sub">Preparation</div><h2>Before your scan</h2><p>Tell the technician if you are or might be pregnant, or have an implant, pacemaker or allergy.</p></div>
+<div class="prep-grid"><div class="prep-card"><h3><i class="fas fa-x-ray"></i> X-Ray</h3><ul><li>Remove jewellery and metal near the area</li><li>Wear loose clothing</li></ul></div><div class="prep-card"><h3><i class="fas fa-circle-notch"></i> CT scan</h3><ul><li>Some scans need fasting for 4 hours</li><li>Tell us about kidney problems or contrast allergy</li></ul></div><div class="prep-card"><h3><i class="fas fa-magnet"></i> MRI</h3><ul><li>Remove all metal, cards and phone</li><li>Tell us about pacemakers, clips or implants</li></ul></div><div class="prep-card"><h3><i class="fas fa-wave-square"></i> Ultrasound</h3><ul><li>Abdomen: fast for 6 hours</li><li>Pelvis: drink water and keep a full bladder</li></ul></div></div><p class="note"><i class="fas fa-circle-info"></i> Instructions can differ by scan. We confirm them when you book.</p>
+        </div>
+    </section>
+
+    <section class="sp-section alt" id="how">
+        <div class="container">
+            <div class="section-header"><div class="sub">How it works</div><h2>From booking to report</h2><p></p></div>
+<ol class="steps"><li><h3>Book</h3><p>Choose the scan, bring your doctor's referral if you have one.</p></li><li><h3>Safety screening</h3><p>A short questionnaire about pregnancy, implants and allergies.</p></li><li><h3>Scan</h3><p>A technician guides you through it. Most scans take under 45 minutes.</p></li><li><h3>Report</h3><p>Read by a radiologist and sent to you and your doctor.</p></li></ol>
+        </div>
+    </section>
+
+    <section class="sp-section" id="faq">
+        <div class="container">
+            <div class="section-header"><div class="sub">FAQ</div><h2>Common questions</h2><p></p></div>
+<div class="faq"><details><summary>Do I need a doctor referral?</summary><p>CT and MRI usually need one. X-ray and ultrasound can often be booked directly. Ask us when you book.</p></details><details><summary>Is it safe during pregnancy?</summary><p>Ultrasound is safe. Always tell us if you may be pregnant before an X-ray or CT, so we can decide with your doctor.</p></details><details><summary>Will I get the images?</summary><p>Yes. You get the report and the images, and we can send them to your doctor.</p></details></div>
+        </div>
+    </section>
+
+    <section class="cta-section"><div class="cta-box"><h2>Need an imaging consultation?</h2><p>Not sure which scan you need? Our radiology team can help.</p><a href="tel:+1234567890" class="btn-white"><i class="fas fa-phone"></i> Contact radiology</a></div></section>
+
+    <script src="js/layout.js" data-part="footer"></script>
+    <script src="js/data/radiology.js"></script>
+    <script src="js/catalog.js"></script>
+    <script>
+        Catalog({ key: 'radiology', onAction: function (item) {
+            location.href = 'booking.html?service=' + encodeURIComponent(item.name);
+        }});
+    </script>
+</body>
+</html>

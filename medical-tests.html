@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codry - Lab Tests</title>
+    <meta name="description"
+        content="Book blood, urine and hormone tests, follow the preparation guide and get results online.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/service-pages.css">
+    <link rel="stylesheet" href="css/page-hero.css">
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%9A%95%EF%B8%8F%3C/text%3E%3C/svg%3E">
+
+</head>
+
+<body data-shared>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <i class="fas fa-heartbeat"></i> Codry
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="dropdown" id="departmentsDropdown">
+                        <a href="services.html">
+                            Departments <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="doctors.html"><i class="fas fa-user-md"></i> Doctors</a></li>
+                            <li><a href="medical-tests.html"><i class="fas fa-flask"></i> Lab Tests</a></li>
+                            <li><a href="radiology.html"><i class="fas fa-x-ray"></i> Radiology</a></li>
+                            <li><a href="pharmacy.html"><i class="fas fa-prescription-bottle"></i> Pharmacy</a></li>
+                            <li><a href="room.html"><i class="fas fa-bed"></i> Rooms</a></li>
+                            <li><a href="emergency.html"><i class="fas fa-ambulance"></i> Emergency</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                    <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+        <!-- ===== 1. HERO ===== -->
+    <section class="ph ph--lab">
+        <div class="ph-inner">
+            <div class="ph-copy">
+                <div class="ph-badge"><i class="fas fa-flask"></i> Laboratory Tests</div>
+                <h1>Advanced <em>Medical Testing</em></h1>
+                <p class="ph-lead">Accurate, fast, and reliable diagnostic tests to help you understand your health better.</p>
+                <div class="ph-actions"><a href="booking.html" class="ph-btn ph-btn--solid"><i class="fas fa-vial"></i> Book a Test</a><a href="radiology.html" class="ph-btn ph-btn--ghost">View Radiology</a></div>
+                <div class="ph-stats"><div class="ph-stat"><b>200+</b><span>Test Types</span></div><div class="ph-stat"><b>24h</b><span>Results Time</span></div><div class="ph-stat"><b>99%</b><span>Accuracy</span></div></div>
+            </div>
+            <div class="ph-visual">
+                <div class="ph-float ph-float--tl"><i class="fas fa-flask"></i><div>200+ Tests<small>Full lab menu</small></div></div><div class="ph-float ph-float--br"><i class="fas fa-clock"></i><div>24h<small>Fast results</small></div></div>
+                <div class="ph-frame"><img src="img/lab/t1.png" alt="Laboratory tests" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+    <section class="info-strip" aria-label="Highlights">
+        <div class="container">
+            <div class="info-item"><i class="fas fa-mobile-screen"></i>
+                <div><b>Results online</b><span>Sent to your phone when ready</span></div>
+            </div>
+            <div class="info-item"><i class="fas fa-house-medical"></i>
+                <div><b>Home sampling</b><span>On request, for any test</span></div>
+            </div>
+            <div class="info-item"><i class="fas fa-utensils"></i>
+                <div><b>Fasting guidance</b><span>Told clearly when you book</span></div>
+            </div>
+            <div class="info-item"><i class="fas fa-certificate"></i>
+                <div><b>Certified lab</b><span>Quality-controlled analysers</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sp-section" id="packages">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">Packages</div>
+                <h2>Health packages</h2>
+                <p>Grouped tests at a lower price than booking them one by one.</p>
+            </div>
+            <div class="packages">
+                <div class="package">
+                    <h3>Basic Health Check</h3>
+                    <div class="price">$69</div>
+                    <div class="save">Save $16</div>
+                    <ul>
+                        <li>Complete blood count</li>
+                        <li>Lipid profile</li>
+                        <li>Fasting blood glucose</li>
+                        <li>Urinalysis</li>
+                    </ul><a class="btn-item" href="booking.html">Book package</a>
+                </div>
+                <div class="package featured">
+                    <h3>Heart Health</h3>
+                    <div class="price">$85</div>
+                    <div class="save">Save $19</div>
+                    <ul>
+                        <li>Lipid profile</li>
+                        <li>Complete blood count</li>
+                        <li>Kidney function panel</li>
+                        <li>Fasting blood glucose</li>
+                    </ul><a class="btn-item" href="booking.html">Book package</a>
+                </div>
+                <div class="package">
+                    <h3>Diabetes Care</h3>
+                    <div class="price">$72</div>
+                    <div class="save">Save $17</div>
+                    <ul>
+                        <li>HbA1c</li>
+                        <li>Fasting blood glucose</li>
+                        <li>Kidney function panel</li>
+                        <li>Urinalysis</li>
+                    </ul><a class="btn-item" href="booking.html">Book package</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sp-section alt" id="tests">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">Tests</div>
+                <h2>Individual tests</h2>
+                <p>Search by test name, or filter by sample type.</p>
+            </div>
+
+            <div class="tools">
+                <div class="tools-row">
+                    <label class="search-box"><i class="fas fa-search"></i><input type="search" id="catalogSearch"
+                            placeholder="Search: CBC, vitamin D, صورة دم..." aria-label="Search"></label>
+                    <select class="select" id="catalogSort" aria-label="Sort">
+                        <option value="default">Sort: Featured</option>
+                        <option value="name">Name A-Z</option>
+                        <option value="low">Price: low to high</option>
+                        <option value="high">Price: high to low</option>
+                    </select>
+                    <label class="check"><input type="checkbox" id="catalogOnly"> Available now only</label>
+                </div>
+                <div class="tabs" id="catalogTabs" role="group" aria-label="Categories"></div>
+            </div>
+            <div class="result-count" id="catalogCount" aria-live="polite"></div>
+            <div class="catalog-grid" id="catalogGrid"></div>
+        </div>
+    </section>
+
+    <section class="sp-section" id="how">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">How it works</div>
+                <h2>Four steps to your results</h2>
+                <p></p>
+            </div>
+            <ol class="steps">
+                <li>
+                    <h3>Book</h3>
+                    <p>Pick a test or package and a time.</p>
+                </li>
+                <li>
+                    <h3>Give a sample</h3>
+                    <p>At the lab, or at home if you ask for it.</p>
+                </li>
+                <li>
+                    <h3>We analyse</h3>
+                    <p>Most results are ready within a day.</p>
+                </li>
+                <li>
+                    <h3>Get your results</h3>
+                    <p>Online, and shared with your doctor if you wish.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="sp-section alt" id="prep">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">Preparation</div>
+                <h2>Before your test</h2>
+                <p>Good preparation avoids repeat tests.</p>
+            </div>
+            <div class="prep-grid">
+                <div class="prep-card">
+                    <h3><i class="fas fa-utensils"></i> Fasting tests</h3>
+                    <ul>
+                        <li>8 hours without food, water is fine</li>
+                        <li>Includes lipid, glucose and liver panels</li>
+                        <li>Morning appointments are easiest</li>
+                    </ul>
+                </div>
+                <div class="prep-card">
+                    <h3><i class="fas fa-circle-check"></i> No-prep tests</h3>
+                    <ul>
+                        <li>Blood count, vitamin D and kidney panels</li>
+                        <li>Eat and drink as usual</li>
+                    </ul>
+                </div>
+                <div class="prep-card">
+                    <h3><i class="fas fa-vial"></i> Urine sample</h3>
+                    <ul>
+                        <li>Use the sterile cup we give you</li>
+                        <li>Midstream, first morning sample if possible</li>
+                    </ul>
+                </div>
+                <div class="prep-card">
+                    <h3><i class="fas fa-pills"></i> Your medication</h3>
+                    <ul>
+                        <li>Keep taking it unless your doctor says otherwise</li>
+                        <li>Tell the lab what you take</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="note"><i class="fas fa-circle-info"></i> Preparation can differ by test. We confirm it with you
+                when you book.</p>
+        </div>
+    </section>
+
+    <section class="sp-section" id="results">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">Results</div>
+                <h2>Check your results</h2>
+                <p>Enter the reference number from your receipt and the phone number you gave us.</p>
+            </div>
+            <div class="split">
+                <form class="form-card" data-demo
+                    data-success="Request received. If your results are ready, a secure link will be sent to your phone.">
+                    <h3>Result lookup</h3>
+                    <p>Results are released only to the phone number on the booking.</p>
+                    <div class="form-row">
+                        <div class="form-group"><label for="refNo">Reference number</label><input id="refNo"
+                                name="refNo" type="text" required></div>
+                        <div class="form-group"><label for="refPhone">Phone</label><input id="refPhone" name="refPhone"
+                                type="tel" required autocomplete="tel"></div>
+                    </div><button class="btn-submit" type="submit">Send me my results</button>
+                    <div class="form-result" role="status" hidden></div>
+                </form>
+                <aside class="side-card">
+                    <h3>Good to know</h3>
+                    <div class="side-row"><span>Typical turnaround</span><span>Within 24 hours</span></div>
+                    <div class="side-row"><span>Urgent results</span><span>We call you</span></div>
+                    <div class="side-row"><span>Need a copy?</span><span>Ask at reception</span></div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="sp-section alt" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <div class="sub">FAQ</div>
+                <h2>Common questions</h2>
+                <p></p>
+            </div>
+            <div class="faq">
+                <details>
+                    <summary>How long until I get my results?</summary>
+                    <p>Most blood and urine tests are ready the same day or the next day. Some, such as hepatitis
+                        screening, are by appointment and take longer.</p>
+                </details>
+                <details>
+                    <summary>Do I need a doctor referral?</summary>
+                    <p>Not for routine tests. A referral helps for specialised tests, and your doctor can then see the
+                        results directly.</p>
+                </details>
+                <details>
+                    <summary>Can someone collect a sample at home?</summary>
+                    <p>Yes. Ask when booking and we arrange a visit.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-box">
+            <h2>Need a test consultation?</h2>
+            <p>Not sure which test you need? Our lab team can guide you.</p><a href="tel:+1234567890"
+                class="btn-white"><i class="fas fa-phone"></i> Contact the lab</a>
+        </div>
+    </section>
+
+    <script src="js/layout.js" data-part="footer"></script>
+    <script src="js/data/lab.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/forms.js"></script>
+    <script>
+        Catalog({
+            key: 'lab', onAction: function (item) {
+                location.href = 'booking.html?service=' + encodeURIComponent(item.name);
+            }
+        });
+    </script>
+</body>
+
+</html>
